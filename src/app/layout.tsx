@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import "./globals.css";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 const nunito = Nunito({
   variable: "--font-nunito",
@@ -25,6 +26,7 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         {children}
+        <WhatsAppButton />
       </body>
     </html>
   );
