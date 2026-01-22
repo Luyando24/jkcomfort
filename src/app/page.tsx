@@ -5,6 +5,7 @@ import { Features } from "@/components/Features";
 import { Footer } from "@/components/Footer";
 
 export default function Home() {
+  // Landing page for J & K Comfort
   return (
     <main className="min-h-screen bg-white">
       <Navbar />
