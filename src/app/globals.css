@@ -1,4 +1,6 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --background: #F0F9FF; /* Sky 50 */
@@ -11,19 +13,14 @@
   --brand-text: #1E3A8A;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-nunito), ui-sans-serif, system-ui, sans-serif;
-  
-  --color-brand-blue: var(--brand-blue);
-  --color-brand-green: var(--brand-green);
-  --color-brand-orange: var(--brand-orange);
-  --color-brand-text: var(--brand-text);
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-nunito), ui-sans-serif, system-ui, sans-serif;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-sans);
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
 }
